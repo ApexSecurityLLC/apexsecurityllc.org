@@ -1,0 +1,45 @@
+baseURL = 'https://apexssecurityllc.org'
+canonifyURLs = false
+relativeURLs = true
+languageCode = 'en-us'
+title = 'Apex Security LLC | Professional Security in NE Oklahoma'
+theme = 'ananke'
+google_analytics = "" 
+
+# Enable Sitemap and Robots.txt for SEO
+enableRobotsTXT = true
+
+[params]
+  description = "Law enforcement-backed armed and unarmed security services for Tulsa, Pryor, and Broken Arrow. Locally owned and operated."
+  background_color_class = "bg-black"
+  text_color = "text-light"
+  recent_posts_number = 3
+  # Business Info
+  phone = "405-623-1757"
+  email = "Ryan@apexsecurityllc.org"
+  custom_css = ["css/custom.css"]
+  
+
+[sitemap]
+  changefreq = 'monthly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# NAVIGATION MENU
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "FAQ"
+  url = "/faq/"
+  weight = 2
+
+[[menu.main]]
+  name = "CONTACT / GET A QUOTE"
+  url = "/contact/"
+  weight = 3
